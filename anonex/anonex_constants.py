@@ -8,7 +8,7 @@ MAX_ORDER_ID_LEN = 36
 
 # Base URLs
 REST_URL = "https://api.anonex.io/api/v2"
-WSS_URL = "wss://ws.anonex.io"
+WSS_URL = "wss://api.anonex.io"
 
 # Public API endpoints
 EXCHANGE_INFO_PATH_URL = "/market/getlist"
