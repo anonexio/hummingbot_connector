@@ -125,7 +125,7 @@ anonex/
 
 - **"Not Authorized" errors**: Verify your API key has `read,trade` permissions and is not IP-restricted (or your IP is whitelisted).
 - **Trading pair not found**: Make sure the pair exists on AnonEx and use `-` format (e.g., `BTC-USDT`, not `BTC/USDT`).
-- **Connection issues**: Check that your firewall allows outbound connections to `api.anonex.io` and `ws.anonex.io`.
+- **Connection issues**: Check that your firewall allows outbound connections to `api.anonex.io`.
 
 ## Links
 
