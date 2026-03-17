@@ -204,6 +204,10 @@ class AnonexExchange(ExchangePyBase):
             price_str = f"{price:f}"
             api_params["price"] = price_str
 
+        # Support quote-based market buys (quoteOrderQty)
+        if "quoteOrderQty" in kwargs:
+            api_params["quoteOrderQty"] = str(kwargs["quoteOrderQty"])
+
         order_result = await self._api_post(
             path_url=CONSTANTS.CREATE_ORDER_PATH_URL,
             data=api_params,
